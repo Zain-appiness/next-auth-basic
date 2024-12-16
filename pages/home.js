@@ -1,6 +1,6 @@
 import React from 'react';
 import { getServerSession } from "next-auth/next";
-import authOptions from "./auth";
+import authOptions from "../lib/auth";
 import Image from 'next/image';
 import Logout from './compnents/Logout';
 

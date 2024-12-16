@@ -1,5 +1,5 @@
 import React from 'react';
-import { doSocialLogin } from '../actions/index';
+import { doSocialLogin } from '../../lib/index';
 
 const LoginForm = () => {
   const handleLogin = async (action: string) => {
