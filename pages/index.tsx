@@ -1,4 +1,4 @@
-import LoginForm from './compnents/LoginForm';
+import LoginForm from './compnent/LoginForm';
 
 export default function Home() {
   return (

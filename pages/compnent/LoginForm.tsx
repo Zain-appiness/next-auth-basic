@@ -1,5 +1,7 @@
 import React from 'react';
 import { doSocialLogin } from '../../lib/index';
+import { Button } from '../../components/ui/button';
+import { MailOpen } from "lucide-react"
 
 const LoginForm = () => {
   const handleLogin = async (action: string) => {
@@ -8,21 +10,21 @@ const LoginForm = () => {
 
   return (
     <form onSubmit={(e) => e.preventDefault()}>
-      <button
-        className="bg-blue-500 text-white p-5 rounded-md m-3 text-lg"
+      <Button
+        className="bg-blue-500 text-white p-6 rounded-md m-3 text-lg"
         type="button"
         onClick={() => handleLogin('google')}
       >
-        Sign In With Google
-      </button>
+        <MailOpen />Sign In With Google
+      </Button>
 
-      <button
-        className="bg-pink-500 text-white p-5 rounded-md m-3 text-lg"
+      <Button
+        className="bg-pink-500 text-white p-6 rounded-md m-3 text-lg"
         type="button"
         onClick={() => handleLogin('github')}
       >
-        Sign In With GitHub
-      </button>
+        <MailOpen /> Sign In With GitHub
+      </Button>
     </form>
   );
 };
